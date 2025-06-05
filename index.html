@@ -1,4 +1,4 @@
-<html lang="pt-BR"><head></head><body>﻿
+<html lang="pt-BR"><head></head><body>?
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Viva Sorte</title>
@@ -116,27 +116,27 @@
       <div class="cotas">
   
         <div class="cotas-one">
-                    <button type="button" class="cota" onclick="selecionarValor(15)">
+                    <button type="button" class="cota" onclick="selecionarValor(20)">
               <div class="cota-qtd">                    
-                  +15
+                  +20
               </div>
-              <h1>R$14,85</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          <button type="button" class="cota" onclick="selecionarValor(30)">
-              <div class="cota-qtd">
-                  +30
-              </div>
-              <h1>R$29,70</h1>
+              <h1>R$19,80</h1>
               <h2>SELECIONAR</h2>
           </button>
   
           <button type="button" class="cota" onclick="selecionarValor(40)">
               <div class="cota-qtd">
-              +40
+                  +40
               </div>
               <h1>R$39,60</h1>
+              <h2>SELECIONAR</h2>
+          </button>
+  
+          <button type="button" class="cota" onclick="selecionarValor(60)">
+              <div class="cota-qtd">
+              +60
+              </div>
+              <h1>R$59,40</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -146,12 +146,12 @@
   
         <div class="cotas-one">
             
-            <button type="button" class="cota" onclick="selecionarValor(70)">
+            <button type="button" class="cota" onclick="selecionarValor(80)">
               <i class="bi bi-star-fill destaque"></i>
               <div class="cota-qtd">
-              +70
+              +80
               </div>
-              <h1>R$69,30</h1>
+              <h1>R$79,20</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -223,7 +223,7 @@
                   <h2>Viva Privilégios</h2>
               </div>
               <div class="card-hospital-text">
-                  <p>Viva Privilégios, um programa que enriquece sua vida com acesso ���� saúde, alimentação, transporte e mais. Com cada compra, acumule pontos para trocar por consultas médicas, receber cashback, e utilizar serviços de telefonia e apps de transporte e alimentação. Eleve sua qualidade de vida e desfrute de mais conveniência e economia!</p>
+                  <p>Viva Privilégios, um programa que enriquece sua vida com acesso ???? saúde, alimentação, transporte e mais. Com cada compra, acumule pontos para trocar por consultas médicas, receber cashback, e utilizar serviços de telefonia e apps de transporte e alimentação. Eleve sua qualidade de vida e desfrute de mais conveniência e economia!</p>
               </div>
           </div>
   
@@ -280,14 +280,14 @@
           var valorAtual = parseInt(input.value);
           if (valorAtual < 200) {
               if (valorAtual === 0) {
-                  input.value = 15;
-              } else if (valorAtual === 15) {
-                  input.value = 30;
-              } else if (valorAtual === 30) {
+                  input.value = 20;
+              } else if (valorAtual === 20) {
                   input.value = 40;
               } else if (valorAtual === 40) {
-                  input.value = 70;
-              } else if (valorAtual === 70) {
+                  input.value = 60;
+              } else if (valorAtual === 60) {
+                  input.value = 80;
+              } else if (valorAtual === 80) {
                   input.value = 100;
               } else if (valorAtual === 100) {
                   input.value = 200;
@@ -299,17 +299,17 @@
       function decrementar() {
           var input = document.getElementById('numero');
           var valorAtual = parseInt(input.value);
-          if (valorAtual > 15) {
+          if (valorAtual > 20) {
               if (valorAtual === 200) {
                   input.value = 100;
               } else if (valorAtual === 100) {
-                  input.value = 70;
-              } else if (valorAtual === 70) {
+                  input.value = 80;
+              } else if (valorAtual === 80) {
+                  input.value = 60;
+              } else if (valorAtual === 60) {
                   input.value = 40;
               } else if (valorAtual === 40) {
-                  input.value = 30;
-              } else if (valorAtual === 30) {
-                  input.value = 15;
+                  input.value = 20;
               }
           }
           highlightButton();
@@ -329,23 +329,23 @@
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
-                      case 15:
-                          link = "https://pay.compraeguraapay.com.br/checkout/7cffe209-432a-4c6a-a57d-4e7b662c5e47";
-                          break;
-                      case 30:
-                          link = "https://pay.compraeguraapay.com.br/checkout/c36fd55d-b8e7-4568-9e7f-277d072868d0";
+                      case 20:
+                          link = "https://pay.novopagamentosseguro.com/checkout/40777047-a51f-47c7-a87a-f95fc9cd05b0";
                           break;
                       case 40:
-                          link = "https://pay.compraeguraapay.com.br/checkout/2e97eca7-64c4-4e9f-be80-8481dc138afd";
+                          link = "https://pay.novopagamentosseguro.com/checkout/0fa8d728-a08a-4f5e-9351-daff92c82d4b";
                           break;
-                      case 70:
-                          link = "https://pay.compraeguraapay.com.br/checkout/726f7e94-4e23-42ce-8379-ee5daecb4d70";
+                      case 60:
+                          link = "https://pay.novopagamentosseguro.com/checkout/792ddfd3-715e-4d7c-b827-3e72878df8d2";
+                          break;
+                      case 80:
+                          link = "https://pay.novopagamentosseguro.com/checkout/da131c2e-072c-4339-b635-01d9357e338f";
                           break;
                       case 100:
-                          link = "https://pay.compraeguraapay.com.br/checkout/f54998a7-17d3-4678-b218-b72dbbe8d021";
+                          link = "https://pay.novopagamentosseguro.com/checkout/3520cee4-193a-46c6-82a9-2bcdb6bbcab0";
                           break;
                               case 200:
-                          link = "https://pay.compraeguraapay.com.br/checkout/15a77530-e991-4545-8bf3-9788694cbedc";
+                          link = "https://pay.novopagamentosseguro.com/checkout/9de340b0-a791-4fd4-abce-0b312b039d0f";
                           break;
                   
                       default:
